@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envertis Technologies - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Envertis Technologies" class="logo-img">
+                <span class="logo-text">Envertis Technologies</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="images/logo.png" alt="Envertis" class="hero-logo">
+            <h1>Envertis Technologies</h1>
+            <p class="tagline">Cloud • DevOps • Automation • Development</p>
+            <p>We deliver cutting-edge technology solutions that drive business growth and digital transformation. With expertise in cloud infrastructure, automation, software testing, and application development, we help businesses achieve their goals efficiently and effectively.</p>
+            <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive technology solutions tailored to your business needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Cloud & DevOps</h3>
+                    <p>Transform your infrastructure with scalable cloud solutions and streamlined DevOps practices.</p>
+                    <a href="services.html#cloud-devops" class="btn btn-secondary" style="margin-top: 1rem;">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Automation & Software Testing</h3>
+                    <p>Automation, test frameworks, and QA—reduce manual work and deliver reliable software.</p>
+                    <a href="services.html#automation" class="btn btn-secondary" style="margin-top: 1rem;">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Application Development</h3>
+                    <p>Build robust, scalable applications using modern technologies and best practices.</p>
+                    <a href="services.html#development" class="btn btn-secondary" style="margin-top: 1rem;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-band">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Ready to Transform Your Business?</h2>
+            <p class="section-subtitle">Let's discuss how we can help you achieve your technology goals</p>
+            <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Envertis Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.body.style.overflow = document.querySelector('.nav-links').classList.contains('active') ? 'hidden' : '';
+        }
+        document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.remove('active');
+            document.querySelector('.menu-toggle').classList.remove('active');
+            document.body.style.overflow = '';
+        }));
+    </script>
+</body>
+</html>
+

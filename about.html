@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Envertis Technologies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Envertis Technologies" class="logo-img">
+                <span class="logo-text">Envertis Technologies</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>About Envertis Technologies</h1>
+            <p class="tagline">Your Trusted Technology Partner</p>
+        </div>
+    </section>
+
+    <!-- Company Introduction -->
+    <section>
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Who We Are</h2>
+                <p>
+                    Envertis Technologies is a leading technology solutions provider dedicated to helping businesses 
+                    navigate the digital landscape with confidence. We combine deep technical expertise with a 
+                    customer-centric approach to deliver solutions that drive real business value.
+                </p>
+                <p>
+                    Founded with a vision to bridge the gap between complex technology and business needs, we have 
+                    grown into a trusted partner for organizations seeking innovative, reliable, and scalable 
+                    technology solutions. Our team of experienced professionals brings years of industry knowledge 
+                    and a passion for excellence to every project.
+                </p>
+                <p>
+                    We specialize in cloud infrastructure, DevOps practices, automation services, software testing, 
+                    and custom application development. Our commitment to quality, innovation, and customer success 
+                    sets us apart in the technology services industry.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision and Mission -->
+    <section class="alt-bg">
+        <div class="container">
+            <h2 class="section-title">Our Vision & Mission</h2>
+            <div class="vision-mission">
+                <div class="vision-mission-card">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To be the most trusted technology partner for businesses worldwide, empowering them to 
+                        achieve digital transformation and sustainable growth through innovative solutions and 
+                        exceptional service delivery.
+                    </p>
+                </div>
+                <div class="vision-mission-card">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To deliver cutting-edge technology solutions that solve real business challenges, enhance 
+                        operational efficiency, and drive competitive advantage. We are committed to building 
+                        long-term partnerships based on trust, transparency, and mutual success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience and Expertise -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Experience & Expertise</h2>
+            <div class="about-content">
+                <p>
+                    With years of experience in the technology industry, our team has successfully delivered 
+                    projects across various sectors including finance, healthcare, e-commerce, manufacturing, 
+                    and enterprise software.
+                </p>
+                <p>
+                    Our expertise spans multiple domains:
+                </p>
+                <div class="services-grid" style="margin-top: 2rem;">
+                    <div class="service-card">
+                        <h3>Cloud Expertise</h3>
+                        <p>Deep knowledge of AWS, Azure, and GCP platforms with hands-on experience in designing 
+                        and implementing scalable cloud architectures.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>DevOps Mastery</h3>
+                        <p>Proficient in CI/CD pipelines, containerization, infrastructure as code, and 
+                        automation tools to streamline development workflows.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Testing Excellence</h3>
+                        <p>Expertise in automation testing frameworks, API testing, performance testing, 
+                        and quality assurance methodologies.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Development Skills</h3>
+                        <p>Proficient in modern programming languages, frameworks, and development practices 
+                        to build robust and maintainable applications.</p>
+                    </div>
+                </div>
+                <p style="margin-top: 2rem;">
+                    We stay at the forefront of technology trends and continuously invest in learning and 
+                    development to ensure our clients benefit from the latest innovations and best practices 
+                    in the industry.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Envertis Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.body.style.overflow = document.querySelector('.nav-links').classList.contains('active') ? 'hidden' : '';
+        }
+        document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.remove('active');
+            document.querySelector('.menu-toggle').classList.remove('active');
+            document.body.style.overflow = '';
+        }));
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Envertis Technologies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Envertis Technologies" class="logo-img">
+                <span class="logo-text">Envertis Technologies</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Our Projects</h1>
+            <p class="tagline">Success Stories That Drive Business Growth</p>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Case Studies</h2>
+            <p class="section-subtitle">Real solutions for real business challenges</p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3>E-Commerce Platform Cloud Migration</h3>
+                    
+                    <div class="project-section">
+                        <h4>Problem</h4>
+                        <p>
+                            A leading e-commerce company was experiencing scalability issues with their on-premises infrastructure. 
+                            During peak shopping seasons, their servers couldn't handle the traffic surge, resulting in downtime 
+                            and lost revenue. Manual deployment processes were slow and error-prone, delaying feature releases 
+                            and bug fixes.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>Solution</h4>
+                        <p>
+                            We designed and implemented a comprehensive cloud migration strategy using AWS. We migrated their 
+                            application to a scalable microservices architecture, implemented automated CI/CD pipelines with 
+                            Jenkins and Docker, set up auto-scaling groups, and configured load balancers. We also implemented 
+                            comprehensive monitoring with CloudWatch and established disaster recovery procedures.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>Result</h4>
+                        <p>
+                            The migration resulted in a 99.9% uptime during peak seasons, a 60% reduction in infrastructure 
+                            costs, and deployment time reduced from days to hours. The platform now handles 5x more traffic 
+                            without performance degradation, and the automated processes eliminated deployment errors.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3>Enterprise Test Automation Framework</h3>
+                    
+                    <div class="project-section">
+                        <h4>Problem</h4>
+                        <p>
+                            A financial services company was struggling with manual testing processes that were time-consuming 
+                            and prone to human error. Their regression testing took weeks to complete, delaying releases and 
+                            increasing the risk of bugs reaching production. The lack of automated testing also made it difficult 
+                            to ensure consistent quality across multiple applications.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>Solution</h4>
+                        <p>
+                            We developed a comprehensive test automation framework using Selenium WebDriver with Java and TestNG. 
+                            The framework included API testing with RestAssured, cross-browser testing capabilities, and integration 
+                            with their CI/CD pipeline. We created reusable test components, implemented data-driven testing, and 
+                            set up comprehensive reporting dashboards. The framework was designed to be maintainable and scalable 
+                            for future growth.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>Result</h4>
+                        <p>
+                            Test execution time was reduced from 3 weeks to 2 days, achieving 80% test coverage. The automated 
+                            regression suite runs nightly, catching bugs early in the development cycle. This resulted in a 70% 
+                            reduction in production defects and enabled faster release cycles. The company now releases new features 
+                            bi-weekly instead of monthly, with higher confidence in quality.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3>Healthcare Application Development & DevOps</h3>
+                    
+                    <div class="project-section">
+                        <h4>Problem</h4>
+                        <p>
+                            A healthcare provider needed a modern patient management system to replace their legacy application. 
+                            The existing system lacked integration capabilities, had poor user experience, and couldn't scale 
+                            with growing patient data. Compliance requirements and data security were critical concerns.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>Solution</h4>
+                        <p>
+                            We developed a secure, HIPAA-compliant web application using modern technologies. The solution included 
+                            patient portal, appointment scheduling, medical records management, and integration with existing 
+                            systems via RESTful APIs. We implemented DevOps practices with automated deployments, containerization 
+                            with Docker, and deployed on AWS with proper security controls and encryption.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>Result</h4>
+                        <p>
+                            The new system improved patient satisfaction scores by 45%, reduced appointment scheduling time by 
+                            50%, and enabled seamless integration with third-party healthcare systems. The application handles 
+                            10,000+ concurrent users with excellent performance, and compliance audits passed successfully. 
+                            Development and deployment cycles were reduced by 40% through DevOps implementation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-band">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Have a Project in Mind?</h2>
+            <p class="section-subtitle">Let's discuss how we can help you achieve similar results</p>
+            <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Envertis Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.body.style.overflow = document.querySelector('.nav-links').classList.contains('active') ? 'hidden' : '';
+        }
+        document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.remove('active');
+            document.querySelector('.menu-toggle').classList.remove('active');
+            document.body.style.overflow = '';
+        }));
+    </script>
+</body>
+</html>
+
