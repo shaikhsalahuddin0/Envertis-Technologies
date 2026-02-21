@@ -1,4 +1,4 @@
-**Envertis-Technologies
+**Envertis-Technologies**
 
 A static multi-page website for Envertis Technologies (marketing pages and contact information).
 
@@ -11,6 +11,7 @@ Pages included:
 - `services.html` — **Services**
 - `projects.html` — **Projects**
 - `contact.html` — **Contact**
+
 
 
 
